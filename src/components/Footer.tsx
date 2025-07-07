@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Clock, Heart, Shield, Award } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Heart, Shield, Award, Stethoscope } from 'lucide-react';
 
 const Footer = () => {
   const openPrivacyPolicy = () => {
@@ -28,11 +28,9 @@ const Footer = () => {
           {/* Clinic Info */}
           <div className="lg:col-span-2">
             <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-6 mb-8">
-              <img
-                src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview.png"
-                alt="Dra. Mary Carmen Sánchez Moreno"
-                className="h-20 lg:h-24 w-auto object-contain"
-              />
+              <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-4 rounded-2xl shadow-lg">
+                <Stethoscope className="h-12 w-12 text-white" />
+              </div>
               <div className="text-center lg:text-left">
                 <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
                   Clínica Dra. Mary Carmen Sánchez Moreno

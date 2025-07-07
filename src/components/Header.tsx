@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Stethoscope } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,43 +15,49 @@ const Header = () => {
   return (
     <header className="bg-white/98 backdrop-blur-md shadow-xl border-b border-blue-100 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-28">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo Section - Left Side */}
           <div className="flex items-center flex-shrink-0">
-            <img
-              src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview.png"
-              alt="Dra. Mary Carmen Sánchez Moreno"
-              className="h-14 lg:h-20 w-auto object-contain"
-            />
+            <div className="flex items-center space-x-4">
+              <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-3 rounded-2xl shadow-lg">
+                <Stethoscope className="h-8 w-8 text-white" />
+              </div>
+              <div className="hidden sm:block">
+                <h1 className="text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
+                  Dra. Mary Carmen Sánchez Moreno
+                </h1>
+                <p className="text-sm lg:text-base text-gray-600 font-medium">Medicina Estética</p>
+              </div>
+            </div>
           </div>
 
           {/* Desktop Navigation - Stretched across remaining space */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 ml-16">
-            <div className="flex items-center justify-between w-full max-w-4xl">
+          <nav className="hidden lg:flex items-center justify-center flex-1 ml-8">
+            <div className="flex items-center justify-between w-full max-w-3xl">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
               >
                 Inicio
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
               >
                 Sobre Mí
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
               >
                 Servicios
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-12 py-4 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-xl border-2 border-transparent hover:border-blue-300"
+                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-3 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
               >
                 Contacto
               </button>
