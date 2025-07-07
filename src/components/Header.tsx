@@ -16,50 +16,56 @@ const Header = () => {
     <header className="bg-white/98 backdrop-blur-md shadow-xl border-b border-blue-100 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Logo Section - Left Side */}
-          <div className="flex items-center flex-shrink-0">
-            <div className="flex items-center space-x-4">
-              <img
-                src="/logo.png"
-                alt="Dra. Mary Carmen Sánchez Moreno"
-                className="h-12 lg:h-16 w-auto object-contain"
-              />
-              <div className="hidden sm:block">
-                <h1 className="text-lg lg:text-xl xl:text-2xl font-bold text-blue-900 leading-tight">
+          {/* Logo Section - Perfectly sized and positioned */}
+          <div className="flex items-center flex-shrink-0 min-w-0">
+            <div className="flex items-center space-x-3 lg:space-x-4">
+              <div className="flex-shrink-0">
+                <img
+                  src="/logo.png"
+                  alt="Dra. Mary Carmen Sánchez Moreno"
+                  className="h-14 lg:h-18 w-auto object-contain max-w-none"
+                  style={{ 
+                    filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))',
+                    imageRendering: 'crisp-edges'
+                  }}
+                />
+              </div>
+              <div className="hidden sm:block min-w-0 flex-1">
+                <h1 className="text-base lg:text-lg xl:text-xl font-bold text-blue-900 leading-tight truncate">
                   Dra. Mary Carmen Sánchez Moreno
                 </h1>
-                <p className="text-sm lg:text-base text-gray-600 font-medium">Medicina Estética</p>
+                <p className="text-xs lg:text-sm text-gray-600 font-medium">Medicina Estética</p>
               </div>
             </div>
           </div>
 
-          {/* Desktop Navigation - Stretched across remaining space */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 ml-8">
-            <div className="flex items-center justify-between w-full max-w-3xl">
+          {/* Desktop Navigation - Perfectly spaced */}
+          <nav className="hidden lg:flex items-center justify-end flex-1 ml-8">
+            <div className="flex items-center space-x-8 xl:space-x-12">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
               >
                 Inicio
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
               >
                 Sobre Mí
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-4"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
               >
                 Servicios
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-3 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
+                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-3 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg whitespace-nowrap"
               >
                 Contacto
               </button>
@@ -69,7 +75,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-3 rounded-xl hover:bg-blue-50 transition-colors border border-blue-100"
+            className="lg:hidden p-3 rounded-xl hover:bg-blue-50 transition-colors border border-blue-100 flex-shrink-0"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6 text-blue-900" />
