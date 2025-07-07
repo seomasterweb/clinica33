@@ -19,16 +19,16 @@ const About = () => {
                 Profesional de confianza
               </div>
               
-              <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Conoce a la
                 <span className="block bg-gradient-to-r from-blue-900 to-blue-700 bg-clip-text text-transparent">
-                  Dra. Carmen Sánchez Moreno
+                  Dra. Mary Carmen Sánchez Moreno
                 </span>
               </h2>
               
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Soy la Dra. Carmen Sánchez Moreno y llevo <span className="font-bold text-blue-900">35 años</span> 
+                  Soy la Dra. Mary Carmen Sánchez Moreno y llevo <span className="font-bold text-blue-900">35 años</span> 
                   dedicándome a la Medicina Estética, el Tratamiento de la Obesidad y el Antienvejecimiento.
                 </p>
                 <p>
@@ -85,7 +85,7 @@ const About = () => {
                       "Como Presidenta de la Sección Colegial de Medicina Estética, me aseguro de que cada paciente 
                       reciba el mejor cuidado y seguridad en todos nuestros tratamientos."
                     </p>
-                    <p className="text-blue-200 mt-4 font-semibold">— Dra. Carmen Sánchez Moreno</p>
+                    <p className="text-blue-200 mt-4 font-semibold">— Dra. Mary Carmen Sánchez Moreno</p>
                   </div>
                 </div>
               </div>

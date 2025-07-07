@@ -27,18 +27,20 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           {/* Clinic Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-6 mb-8">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-6 mb-8">
               <img
-                src="/src/assets/logo_dra._carmen_sanchez_moreno-removebg-preview.png"
-                alt="Dra. Carmen Sánchez Moreno"
-                className="h-24 w-auto"
+                src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview.png"
+                alt="Dra. Mary Carmen Sánchez Moreno"
+                className="h-20 lg:h-24 w-auto object-contain"
               />
-              <div>
-                <h3 className="text-3xl font-bold">Clínica Dra. Carmen Sánchez Moreno</h3>
-                <p className="text-blue-200 text-xl">Medicina Estética</p>
+              <div className="text-center lg:text-left">
+                <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
+                  Clínica Dra. Mary Carmen Sánchez Moreno
+                </h3>
+                <p className="text-blue-200 text-lg lg:text-xl mt-2">Medicina Estética</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-8 text-xl leading-relaxed">
+            <p className="text-gray-300 mb-8 text-lg lg:text-xl leading-relaxed">
               Más de 35 años de experiencia en Medicina Estética, dedicados a tu bienestar y belleza 
               con la máxima profesionalidad y seguridad. Presidenta de la Sección Colegial de Medicina Estética.
             </p>
@@ -79,15 +81,15 @@ const Footer = () => {
             </h4>
             <div className="space-y-6 text-gray-300">
               <div className="flex items-center hover:text-white transition-colors">
-                <Phone className="h-6 w-6 mr-4 text-blue-300" />
+                <Phone className="h-6 w-6 mr-4 text-blue-300 flex-shrink-0" />
                 <span className="text-lg">659 30 21 39</span>
               </div>
-              <div className="flex items-center hover:text-white transition-colors">
-                <Mail className="h-6 w-6 mr-4 text-blue-300" />
-                <span className="text-lg">dra.carmensanchezmoreno@gmail.com</span>
+              <div className="flex items-start hover:text-white transition-colors">
+                <Mail className="h-6 w-6 mr-4 mt-1 text-blue-300 flex-shrink-0" />
+                <span className="text-lg break-all">dra.carmensanchezmoreno@gmail.com</span>
               </div>
               <div className="flex items-start hover:text-white transition-colors">
-                <MapPin className="h-6 w-6 mr-4 mt-1 text-blue-300" />
+                <MapPin className="h-6 w-6 mr-4 mt-1 text-blue-300 flex-shrink-0" />
                 <span className="text-lg">
                   Carrer de Lorenç Palmireno, 8<br />
                   Camins al Grau<br />
@@ -95,7 +97,7 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex items-start hover:text-white transition-colors">
-                <Clock className="h-6 w-6 mr-4 mt-1 text-blue-300" />
+                <Clock className="h-6 w-6 mr-4 mt-1 text-blue-300 flex-shrink-0" />
                 <div className="text-lg">
                   <div>Lunes-Jueves: 10:00-14:00, 17:00-20:00</div>
                   <div>Viernes: 10:30-14:00</div>
@@ -135,7 +137,7 @@ const Footer = () => {
         
         {/* Copyright */}
         <div className="border-t border-gray-700 pt-12 text-center text-gray-400">
-          <p className="text-xl mb-6">&copy; 2024 Clínica Dra. Carmen Sánchez Moreno. Todos los derechos reservados.</p>
+          <p className="text-xl mb-6">&copy; 2024 Clínica Dra. Mary Carmen Sánchez Moreno. Todos los derechos reservados.</p>
           <p className="flex flex-wrap justify-center items-center gap-6 text-lg">
             <button 
               onClick={openPrivacyPolicy}
