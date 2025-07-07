@@ -27,18 +27,20 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           {/* Clinic Info */}
           <div className="lg:col-span-2">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-6 mb-8">
-              <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-4 rounded-2xl shadow-lg">
-                <Stethoscope className="h-12 w-12 text-white" />
-              </div>
-              <div className="text-center lg:text-left">
-                <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 mb-8">
+              <img
+                src="/logo.png"
+                alt="Dra. Mary Carmen Sánchez Moreno"
+                className="h-16 lg:h-20 w-auto object-contain"
+              />
+              <div className="text-left">
+                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold leading-tight">
                   Clínica Dra. Mary Carmen Sánchez Moreno
                 </h3>
-                <p className="text-blue-200 text-lg lg:text-xl mt-2">Medicina Estética</p>
+                <p className="text-blue-200 text-base lg:text-lg xl:text-xl mt-2">Medicina Estética</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-8 text-lg lg:text-xl leading-relaxed">
+            <p className="text-gray-300 mb-8 text-base lg:text-lg xl:text-xl leading-relaxed">
               Más de 35 años de experiencia en Medicina Estética, dedicados a tu bienestar y belleza 
               con la máxima profesionalidad y seguridad. Presidenta de la Sección Colegial de Medicina Estética.
             </p>

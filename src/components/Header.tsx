@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Stethoscope } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,11 +19,13 @@ const Header = () => {
           {/* Logo Section - Left Side */}
           <div className="flex items-center flex-shrink-0">
             <div className="flex items-center space-x-4">
-              <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-3 rounded-2xl shadow-lg">
-                <Stethoscope className="h-8 w-8 text-white" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Dra. Mary Carmen Sánchez Moreno"
+                className="h-12 lg:h-16 w-auto object-contain"
+              />
               <div className="hidden sm:block">
-                <h1 className="text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
+                <h1 className="text-lg lg:text-xl xl:text-2xl font-bold text-blue-900 leading-tight">
                   Dra. Mary Carmen Sánchez Moreno
                 </h1>
                 <p className="text-sm lg:text-base text-gray-600 font-medium">Medicina Estética</p>
