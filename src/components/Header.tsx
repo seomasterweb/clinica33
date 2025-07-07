@@ -16,27 +16,17 @@ const Header = () => {
     <header className="bg-white/98 backdrop-blur-md shadow-xl border-b border-blue-100 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Logo Section - Perfectly sized and positioned */}
-          <div className="flex items-center flex-shrink-0 min-w-0">
-            <div className="flex items-center space-x-3 lg:space-x-4">
-              <div className="flex-shrink-0">
-                <img
-                  src="/logo.png"
-                  alt="Dra. Mary Carmen Sánchez Moreno"
-                  className="h-14 lg:h-18 w-auto object-contain max-w-none"
-                  style={{ 
-                    filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.1))',
-                    imageRendering: 'crisp-edges'
-                  }}
-                />
-              </div>
-              <div className="hidden sm:block min-w-0 flex-1">
-                <h1 className="text-base lg:text-lg xl:text-xl font-bold text-blue-900 leading-tight truncate">
-                  Dra. Mary Carmen Sánchez Moreno
-                </h1>
-                <p className="text-xs lg:text-sm text-gray-600 font-medium">Medicina Estética</p>
-              </div>
-            </div>
+          {/* Logo Section - Clean and professional */}
+          <div className="flex items-center flex-shrink-0">
+            <img
+              src="/logo.png"
+              alt="Dra. Mary Carmen Sánchez Moreno"
+              className="h-16 lg:h-20 w-auto object-contain"
+              style={{ 
+                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
+                imageRendering: 'crisp-edges'
+              }}
+            />
           </div>
 
           {/* Desktop Navigation - Perfectly spaced */}

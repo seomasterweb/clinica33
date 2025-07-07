@@ -31,14 +31,12 @@ const Footer = () => {
               <img
                 src="/logo.png"
                 alt="Dra. Mary Carmen Sánchez Moreno"
-                className="h-16 lg:h-20 w-auto object-contain"
+                className="h-20 lg:h-24 w-auto object-contain"
+                style={{ 
+                  filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))',
+                  imageRendering: 'crisp-edges'
+                }}
               />
-              <div className="text-left">
-                <h3 className="text-xl lg:text-2xl xl:text-3xl font-bold leading-tight">
-                  Clínica Dra. Mary Carmen Sánchez Moreno
-                </h3>
-                <p className="text-blue-200 text-base lg:text-lg xl:text-xl mt-2">Medicina Estética</p>
-              </div>
             </div>
             <p className="text-gray-300 mb-8 text-base lg:text-lg xl:text-xl leading-relaxed">
               Más de 35 años de experiencia en Medicina Estética, dedicados a tu bienestar y belleza 
