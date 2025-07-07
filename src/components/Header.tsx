@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Mail, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,50 +25,38 @@ const Header = () => {
             />
           </div>
 
-          {/* Desktop Navigation - Center */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 max-w-2xl mx-8">
-            <div className="flex items-center space-x-12">
+          {/* Desktop Navigation - Stretched across remaining space */}
+          <nav className="hidden lg:flex items-center justify-center flex-1 ml-16">
+            <div className="flex items-center justify-between w-full max-w-4xl">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-2"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
               >
                 Inicio
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-2"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
               >
                 Sobre Mí
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-2"
+                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-xl relative group py-3 px-6"
               >
                 Servicios
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-10 py-4 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-lg border-2 border-transparent hover:border-blue-300"
+                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-12 py-4 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-xl border-2 border-transparent hover:border-blue-300"
               >
                 Contacto
               </button>
             </div>
           </nav>
-
-          {/* Contact Info - Right Side (Desktop Only) */}
-          <div className="hidden xl:flex flex-col items-end space-y-2 flex-shrink-0">
-            <div className="flex items-center text-gray-700 hover:text-blue-900 transition-colors group">
-              <Phone className="h-5 w-5 mr-3 text-blue-900 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-bold text-lg">659 30 21 39</span>
-            </div>
-            <div className="flex items-center text-gray-600 hover:text-blue-900 transition-colors group">
-              <Mail className="h-4 w-4 mr-3 text-blue-900 group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-semibold text-sm">dra.carmensanchezmoreno@gmail.com</span>
-            </div>
-          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -111,18 +99,6 @@ const Header = () => {
               >
                 Contacto
               </button>
-              
-              {/* Mobile Contact Info */}
-              <div className="pt-6 border-t border-blue-100 space-y-4 bg-blue-50 rounded-2xl p-6">
-                <div className="flex items-center text-gray-700">
-                  <Phone className="h-6 w-6 mr-4 text-blue-900" />
-                  <span className="font-bold text-lg">659 30 21 39</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <Mail className="h-5 w-5 mr-4 text-blue-900" />
-                  <span className="font-semibold">dra.carmensanchezmoreno@gmail.com</span>
-                </div>
-              </div>
             </div>
           </div>
         )}
