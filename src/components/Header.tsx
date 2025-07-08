@@ -13,50 +13,49 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white/98 backdrop-blur-md shadow-xl border-b border-blue-100 fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 lg:h-24">
-          {/* Logo Section - Clean and professional */}
+    <header className="bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-100 fixed w-full top-0 z-50">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-18 lg:h-20">
+          {/* Logo Section - Optimizado para móvil */}
           <div className="flex items-center flex-shrink-0">
             <img
               src="/logo.png"
               alt="Dra. Mary Carmen Sánchez Moreno"
-              className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto object-contain max-w-none"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 w-auto object-contain"
               style={{ 
-                filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
-                imageRendering: 'crisp-edges',
-                minWidth: 'auto'
+                filter: 'drop-shadow(0 1px 4px rgba(0,0,0,0.1))',
+                imageRendering: 'crisp-edges'
               }}
             />
           </div>
 
-          {/* Desktop Navigation - Perfectly spaced */}
-          <nav className="hidden lg:flex items-center justify-end flex-1 ml-8">
-            <div className="flex items-center space-x-8 xl:space-x-12">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center justify-end flex-1 ml-6">
+            <div className="flex items-center space-x-6 xl:space-x-8">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
+                className="text-gray-700 hover:text-blue-900 font-semibold transition-all duration-300 text-base relative group py-2 px-1"
               >
                 Inicio
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
+                className="text-gray-700 hover:text-blue-900 font-semibold transition-all duration-300 text-base relative group py-2 px-1"
               >
                 Sobre Mí
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-gray-700 hover:text-blue-900 font-bold transition-all duration-300 text-lg relative group py-3 px-2"
+                className="text-gray-700 hover:text-blue-900 font-semibold transition-all duration-300 text-base relative group py-2 px-1"
               >
                 Servicios
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-900 to-blue-700 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-3 rounded-full font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg whitespace-nowrap"
+                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-6 py-2.5 rounded-full font-semibold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-base"
               >
                 Contacto
               </button>
@@ -66,41 +65,41 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-3 rounded-xl hover:bg-blue-50 transition-colors border border-blue-100 flex-shrink-0"
+            className="lg:hidden p-2 rounded-lg hover:bg-blue-50 transition-colors border border-blue-100 flex-shrink-0"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-blue-900" />
+              <X className="h-5 w-5 text-blue-900" />
             ) : (
-              <Menu className="h-6 w-6 text-blue-900" />
+              <Menu className="h-5 w-5 text-blue-900" />
             )}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden py-8 border-t border-blue-100 bg-white/98 backdrop-blur-md rounded-b-3xl shadow-2xl">
-            <div className="flex flex-col space-y-6">
+          <div className="lg:hidden py-4 border-t border-blue-100 bg-white/98 backdrop-blur-md rounded-b-2xl shadow-xl">
+            <div className="flex flex-col space-y-3">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="text-left text-gray-700 hover:text-blue-900 font-bold transition-colors py-4 text-xl border-b border-blue-50 hover:bg-blue-50 rounded-lg px-4"
+                className="text-left text-gray-700 hover:text-blue-900 font-semibold transition-colors py-3 text-lg hover:bg-blue-50 rounded-lg px-3"
               >
                 Inicio
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-left text-gray-700 hover:text-blue-900 font-bold transition-colors py-4 text-xl border-b border-blue-50 hover:bg-blue-50 rounded-lg px-4"
+                className="text-left text-gray-700 hover:text-blue-900 font-semibold transition-colors py-3 text-lg hover:bg-blue-50 rounded-lg px-3"
               >
                 Sobre Mí
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-left text-gray-700 hover:text-blue-900 font-bold transition-colors py-4 text-xl border-b border-blue-50 hover:bg-blue-50 rounded-lg px-4"
+                className="text-left text-gray-700 hover:text-blue-900 font-semibold transition-colors py-3 text-lg hover:bg-blue-50 rounded-lg px-3"
               >
                 Servicios
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-5 rounded-2xl font-bold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 text-xl shadow-xl transform hover:-translate-y-1"
+                className="bg-gradient-to-r from-blue-900 to-blue-800 text-white px-6 py-4 rounded-xl font-semibold hover:from-blue-800 hover:to-blue-700 transition-all duration-300 text-lg shadow-lg transform hover:-translate-y-0.5 mt-2"
               >
                 Contacto
               </button>
