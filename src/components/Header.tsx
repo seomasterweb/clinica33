@@ -21,10 +21,11 @@ const Header = () => {
             <img
               src="/logo.png"
               alt="Dra. Mary Carmen Sánchez Moreno"
-              className="h-16 lg:h-20 w-auto object-contain"
+              className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto object-contain max-w-none"
               style={{ 
                 filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
-                imageRendering: 'crisp-edges'
+                imageRendering: 'crisp-edges',
+                minWidth: 'auto'
               }}
             />
           </div>

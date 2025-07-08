@@ -31,10 +31,11 @@ const Footer = () => {
               <img
                 src="/logo.png"
                 alt="Dra. Mary Carmen Sánchez Moreno"
-                className="h-20 lg:h-24 w-auto object-contain"
+                className="h-16 sm:h-18 md:h-20 lg:h-22 xl:h-24 w-auto object-contain max-w-none"
                 style={{ 
                   filter: 'drop-shadow(0 2px 8px rgba(255,255,255,0.1))',
-                  imageRendering: 'crisp-edges'
+                  imageRendering: 'crisp-edges',
+                  minWidth: 'auto'
                 }}
               />
             </div>
