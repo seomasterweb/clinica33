@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex flex-col items-center sm:items-start lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 mb-6 sm:mb-8">
               <img
-                src="/logo.png"
+                src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview copy copy copy copy.png"
                 alt="Dra. Mary Carmen Sánchez Moreno"
                 className="h-16 sm:h-18 md:h-20 lg:h-22 xl:h-24 w-auto object-contain"
                 style={{ 

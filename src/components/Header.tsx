@@ -19,7 +19,7 @@ const Header = () => {
           {/* Logo Section - Optimizado para móvil */}
           <div className="flex items-center flex-shrink-0">
             <img
-              src="/logo.png"
+              src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview copy copy copy copy.png"
               alt="Dra. Mary Carmen Sánchez Moreno"
               className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 w-auto object-contain"
               style={{ 

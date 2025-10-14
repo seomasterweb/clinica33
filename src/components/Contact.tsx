@@ -155,6 +155,13 @@ ${formData.message || 'Solicito información sobre los servicios disponibles'}
 
             <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white p-6 sm:p-8 lg:p-12 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
+              <div className="absolute top-4 left-4 opacity-10">
+                <img
+                  src="/src/assets/69c8d35c-8b70-460c-bc49-9fbc795d9130-1_all_9818.jpg"
+                  alt="Clínica profesional"
+                  className="w-24 h-24 object-cover rounded-full"
+                />
+              </div>
               <div className="relative z-10">
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 sm:mb-8 flex items-center">
                   <Sparkles className="h-6 w-6 sm:h-8 sm:w-8 mr-3 sm:mr-4" />
