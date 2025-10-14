@@ -95,7 +95,7 @@ const About = () => {
           <div className="relative order-first lg:order-last">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent rounded-2xl sm:rounded-3xl transform rotate-3 sm:rotate-6"></div>
             <img
-              src="https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/src/assets/1000014461.jpg"
               alt="Consulta médica profesional"
               className="relative rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl lg:shadow-3xl w-full h-64 sm:h-80 md:h-96 lg:h-[600px] xl:h-[700px] object-cover transform -rotate-3 sm:-rotate-6 hover:rotate-0 transition-transform duration-500"
             />

@@ -104,7 +104,7 @@ const Hero = () => {
             <div className="relative z-10">
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-blue-600/20 rounded-2xl sm:rounded-3xl transform rotate-3 sm:rotate-6 animate-pulse"></div>
               <img
-                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/src/assets/1000002135.jpg"
                 alt="Dra. Mary Carmen Sánchez Moreno - Medicina Estética"
                 className="relative rounded-2xl sm:rounded-3xl shadow-2xl w-full h-64 sm:h-80 md:h-96 lg:h-[600px] xl:h-[700px] object-cover transform -rotate-3 sm:-rotate-6 hover:rotate-0 transition-transform duration-700 border-2 sm:border-4 border-white"
               />

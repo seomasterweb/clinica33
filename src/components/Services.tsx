@@ -127,6 +127,13 @@ const Services = () => {
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-900 to-blue-800 p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
+            <div className="absolute top-4 right-4 opacity-10">
+              <img
+                src="/src/assets/69c8d35c-8b70-460c-bc49-9fbc795d9130-1_all_9818.jpg"
+                alt="Dra. Carmen en consulta"
+                className="w-32 h-32 object-cover rounded-full"
+              />
+            </div>
             <div className="relative z-10">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
                 ¿Listo para transformar tu imagen?

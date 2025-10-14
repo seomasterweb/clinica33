@@ -9,7 +9,7 @@ const Testimonials = () => {
       treatment: 'Tratamiento antienvejecimiento',
       text: 'La Dra. Carmen es excepcional. Su profesionalidad y cariño hacen que te sientas en las mejores manos. Los resultados han superado mis expectativas completamente.',
       rating: 5,
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150'
+      image: '/src/assets/69c8d35c-8b70-460c-bc49-9fbc795d9130-1_all_9815.jpg'
     },
     {
       name: 'Ana López',
