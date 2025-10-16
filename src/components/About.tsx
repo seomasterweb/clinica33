@@ -92,21 +92,6 @@ const About = () => {
             </div>
           </div>
           
-          <div className="relative order-first lg:order-last">
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/20 to-transparent rounded-2xl sm:rounded-3xl transform rotate-3 sm:rotate-6"></div>
-            <img
-              src="/src/assets/1000014461.jpg"
-              alt="Consulta médica profesional"
-              className="relative rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl lg:shadow-3xl w-full h-64 sm:h-80 md:h-96 lg:h-[600px] xl:h-[700px] object-cover transform -rotate-3 sm:-rotate-6 hover:rotate-0 transition-transform duration-500"
-            />
-            <div className="absolute -top-3 -left-3 sm:-top-6 sm:-left-6 bg-white p-3 sm:p-4 lg:p-6 rounded-xl sm:rounded-2xl shadow-lg sm:shadow-2xl border border-blue-100">
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-900">35+</div>
-                <div className="text-xs sm:text-sm text-gray-600">Años de</div>
-                <div className="text-xs sm:text-sm text-gray-600">Experiencia</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
