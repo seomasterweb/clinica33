@@ -19,10 +19,10 @@ const Header = () => {
           {/* Logo Section - Optimizado para móvil */}
           <div className="flex items-center flex-shrink-0">
             <img
-              src="/src/assets/logo_clinica_dra_mary_carmen_sanchez-removebg-preview copy copy copy copy.png"
+              src="/logo-clinica.png"
               alt="Dra. Mary Carmen Sánchez Moreno"
               className="h-10 sm:h-12 md:h-14 lg:h-16 xl:h-18 w-auto object-contain"
-              style={{ 
+              style={{
                 filter: 'drop-shadow(0 1px 4px rgba(0,0,0,0.1))',
                 imageRendering: 'crisp-edges'
               }}
