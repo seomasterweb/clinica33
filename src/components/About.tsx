@@ -28,8 +28,7 @@ const About = () => {
               
               <div className="space-y-4 sm:space-y-6 text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
                 <p>
-                  Soy la Dra. Mary Carmen Sánchez Moreno y llevo <span className="font-bold text-blue-900">35 años</span> 
-                  dedicándome a la Medicina Estética, el Tratamiento de la Obesidad y el Antienvejecimiento.
+                  Soy la Dra. Mary Carmen Sánchez Moreno y llevo <span className="font-bold text-blue-900">35 años</span> dedicándome a la Medicina Estética, el Tratamiento de la Obesidad y el Antienvejecimiento.
                 </p>
                 <p>
                   Mi objetivo es cuidar de las personas, ayudarlas a mantenerse jóvenes y saludables, 
